@@ -1,4 +1,4 @@
-opciones = { piedra: :tijeras, papel: :piedra, tijeras: :papel }
+opciones = { :piedra => tijeras, :papel => piedra, :tijeras => papel }
 tirada = defeat.keys
 
 puts "Escoje uno de #{throws.join(', ')}: "

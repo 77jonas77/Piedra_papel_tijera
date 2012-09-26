@@ -1,7 +1,7 @@
-opciones = { :piedra => tijeras, :papel => piedra, :tijeras => papel }
-tirada = defeat.keys
+opciones = { :piedra => :tijeras, :papel => :piedra, :tijeras => :papel }
+tirada = opciones.keys
 
-puts "Escoje uno de #{throws.join(', ')}: "
+puts "Escoje uno de #{tirada.join(', ')}: "
 tirada_jugador = gets.chomp.to_sym #to_sym????
 
 raise ScriptError, "Tu debes ejecutar: ''#{$0}'' seguido por ono de los siguientes '#{tirada.join(', ')}'" unless tirada.include? tirada_jugador
